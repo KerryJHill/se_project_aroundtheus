@@ -1,0 +1,46 @@
+@import "../blocks/header.css";
+@import "../blocks/card.css";
+@import "../blocks/footer.css";
+@import "../blocks/profile.css";
+@import "../vendor/normalize.css";
+@import "../vendor/fonts/fonts.css";
+
+.page {
+    background-color: black;
+    color: white;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    margin: 0;
+    font-family: "Inter", arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.page__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page__section {
+    max-width: 880px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 45px;
+
+
+}
+
+.font-family {}
+
+
+
+@media screen and (max-width: 1100px) {
+    .page__section {
+        margin: 0 20px;
+        max-width: calc(100% - 40px)
+    }
+}

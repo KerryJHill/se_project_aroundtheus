@@ -1,0 +1,25 @@
+.footer {
+    /* box-sizing: border-box; */
+    /* padding: 60px 100px 60px 80px; */
+    background-color: black;
+    color: #545454;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 67px;
+    margin-bottom: 60px;
+}
+
+.footer__section {
+    max-width: 880px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    /* margin-top: 45px; */
+
+
+
+
+    /* background: linear-gradient(180deg, #0a2850 0%, #071931 100%); */
+
+}
