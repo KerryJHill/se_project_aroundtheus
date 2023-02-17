@@ -3,11 +3,15 @@
 
     align-items: center;
     max-width: 880px;
-    padding-top: 40;
-    margin-top: 47px;
-    margin-bottom: 45px;
+    padding-top: 36;
+    /* padding-top: 46px; */
+    margin-bottom: 47px;
     flex-wrap: wrap;
     justify-content: center;
+
+    /* border-top: style solid red; */
+    /* border-style: solid red'; */
+
 
 }
 
@@ -35,6 +39,19 @@
     height: 24px;
     grid-area: button;
     border-color: white;
+    border-radius: 2px;
+    padding: 0px;
+    margin-left: 18px;
+}
+
+
+
+.profile__edit-button:hover {
+    background: transparent url(../images/pencil-hover.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+    grid-area: button;
+    border-color: gray;
     border-radius: 2px;
     padding: 0px;
     margin-left: 18px;
@@ -71,6 +88,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0px;
+    padding-bottom: 47px;
     font-family: 'Inter', sans-serif;
 
 }
@@ -85,16 +103,28 @@
     max-width: 100%;
 }
 
-@media screen and (max-width:400px) {
+.profile__add-button:hover {
+    background: transparent url(../images/add-hover.svg) center no-repeat;
+    width: 150px;
+    height: 50px;
+    margin-left: auto;
+    border-color: white;
+    border-radius: 2px;
+    max-width: 100%;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
     .profile {
+        margin: 0px 20px;
         display: flex;
         flex-direction: column;
         /* background-color: pink; */
         /* align-items: space-between; */
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin-bottom: 36px;
         /* margin-top: 36px; */
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        max-width: calc(100% - 40px);
 
     }
 
@@ -111,6 +141,7 @@
         grid-template-areas:
             "title button"
             "description description";
+        /* padding-top: 36px; */
 
 
     }
@@ -133,27 +164,26 @@
 
     }
 
-    .profile__descripition {
+    .profile__description {
         width: 100%;
-        /* text-align: center; */
-        /* margin-bottom: 36px; */
-        margin: 0px, auto, 36px;
+        text-align: center;
         font-size: 14px;
         line-height: 17px;
-        /* flex-direction: column;
-        flex-wrap: wrap; */
-        justify-content: center;
+        flex-direction: column;
         grid-area: description;
-        align-items: center;
+        margin: 0px;
+        padding-bottom: 36px;
+        align-self: center;
 
     }
 
     .profile__add-button {
         margin: 0px;
+        justify-content: center;
+        width: 282px;
+        height: 50px;
+        margin-left: auto;
 
-        width: 90%;
-        /* justify-content: center; */
-        /* padding-bottom: 36px; */
     }
 
 }
