@@ -10,13 +10,13 @@
     grid-gap: 20px 17px;
     margin: 0px;
     padding: 0px;
-    /* top-margin: 45px; */
+
 }
 
 .card__image {
     width: 282px;
     height: 282px;
-    /* Margin-top: 45px; */
+
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -25,20 +25,14 @@
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
-    /* padding-left: 20px; */
-
     background-color: white;
     align-items: center;
     justify-content: space-between;
     color: black;
     border-radius: 0px 0px 10px 10px;
-
     margin: 0px;
-    /* max-width: 220px; */
     max-width: 282px;
-    /* font-size: 24px;
-    font-weight: 900;
-    line-height: 29px; */
+
 
 }
 
@@ -53,11 +47,8 @@
     white-space: nowrap;
     overflow: hidden;
     padding-left: 20px;
-    /* padding-right: 20px; */
     max-width: 282px;
-    /* display: flex;
-    justify-content: space-between; */
-    /* justify-content: space-around; */
+
 }
 
 
@@ -66,7 +57,7 @@
     width: 21px;
     height: 18px;
     padding: 0;
-    /* padding-right: 20px; */
+
     border: none;
     justify-content: flex-end;
     margin-right: 20px;
@@ -83,12 +74,12 @@
 
 }
 
-@media screen and (min-width:320px) and (max-width:1100x) {
+@media screen and (min-width:320px) and (max-width:1100px) {
 
-    /* @media screen and (max-width:400px) { */
+
     .card__list {
         margin: 0px;
         max-width: calc(100% - 40px);
-        /* justify-content: center; */
+
     }
 }
