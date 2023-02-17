@@ -99,8 +99,8 @@
     margin-left: auto;
     border-color: white;
     border-radius: 2px;
-    /* max-width: 100%; */
-    width: 150px;
+
+
 
 }
 
@@ -119,8 +119,7 @@
         margin: 0px 0px 36px 0px;
         display: flex;
         flex-direction: column;
-        /* margin-bottom: 36px; */
-        /* max-width: calc(100% - 40px); */
+
 
     }
 
