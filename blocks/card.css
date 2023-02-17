@@ -83,11 +83,12 @@
 
 }
 
-@media screen and (min-width:320px) and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width:1100x) {
 
     /* @media screen and (max-width:400px) { */
     .card__list {
         margin: 0px;
         max-width: calc(100% - 40px);
+        /* justify-content: center; */
     }
 }

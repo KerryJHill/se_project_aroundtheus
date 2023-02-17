@@ -101,6 +101,7 @@
     border-color: white;
     border-radius: 2px;
     max-width: 100%;
+    /* justify-content: center; */
 }
 
 .profile__add-button:hover {
@@ -182,7 +183,7 @@
         justify-content: center;
         width: 282px;
         height: 50px;
-        margin-left: auto;
+
 
     }
 

@@ -1,5 +1,7 @@
 # Project 3: Around The U.S.
 
+This is Project #3 in the Web Development program at Practicumk. It was created using HTML and CSS based on the Figma design.
+
 ### Overview
 
 - Intro
@@ -8,7 +10,9 @@
 
 **Intro**
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+This project is made so all the elements are displayed correctly on popular screen sizes.
+
+**Git Hub Link** git@github.com:KerryJHill/se_project_aroundtheus.git
 
 **Figma**
 
@@ -16,6 +20,8 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Images**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+Images were reducing in size using Tinypng.com.
 
-Good luck and have fun!
+## Plans for next phase of Around the U.S.
+
+Allow others to add their travel photos. I would also like to explore how this design can relate to other idustries. I want to implement this design for card ideas on my website.
