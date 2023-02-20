@@ -1,16 +1,11 @@
-.cards {
-    margin-top: 45px;
-
-}
-
-.cards__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 282px);
-    list-style-type: none;
-    grid-gap: 20px 17px;
+.card {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     margin: 0px;
+
     padding: 0px;
-    justify-content: center;
+
 
 }
 
@@ -48,62 +43,34 @@
     white-space: nowrap;
     overflow: hidden;
     padding-left: 20px;
-    width: 282px;
+    /* width: 282px; */
+    width: 220px;
 
 }
 
 
 .card__like-button {
-    background: transparent url(../images/Like-button.svg) center no-repeat;
+    /* background: transparent url(../images/Like-button.svg) center no-repeat; */
+    background: transparent url(../images/Like-button.svg);
     width: 21px;
     height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* object-fit: scale-down; */
     padding: 0;
 
     border: none;
     justify-content: flex-end;
     margin-right: 20px;
+    /* position: relative; */
 
 
 
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0px;
-
-    padding: 0px;
+.card__like-button:hover {
+    opacity: 0.6;
 
 
-}
 
-@media screen and (min-width:320px) and (max-width:920px) {
-
-
-    .cards__list {
-        margin: 0px;
-        max-width: calc(100% - 40px);
-        justify-content: center;
-        margin-left: 20px;
-
-    }
-
-    @media screen and (min-width:921px) and (max-width:1280px) {
-
-
-        .cards__list {
-            margin: 0px;
-            max-width: 1280px;
-            justify-content: center;
-            margin-left: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, 282px);
-            list-style-type: none;
-            grid-gap: 20px 17px;
-            padding: 0px;
-
-
-        }
-    }
 }
