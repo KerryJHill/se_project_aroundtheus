@@ -3,9 +3,8 @@
     padding: 45px 0px 41px 0px;
     border-bottom: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.7);
-    margin: 0px;
-
+    border-bottom-color: rgba(84, 84, 84, 0.7);
+    margin: 0px 20px;
 
 
 
@@ -23,18 +22,16 @@
     .header {
         flex-direction: column;
 
-        padding: 28px 0px 32px;
-        margin-left: -20px;
-        margin-right: -20px;
-
-
-
+        padding: 28px 0px 36px;
+        /* margin-left: -20px;
+        margin-right: -20px; */
+        margin: 0px
     }
 
     .header__logo {
 
         width: 126px;
         height: 24px;
-        margin-left: 20px;
+        margin-left: 27px;
     }
 }

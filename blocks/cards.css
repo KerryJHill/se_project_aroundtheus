@@ -1,5 +1,6 @@
 .cards {
     margin-top: 45px;
+    margin: 0px;
 
 }
 
@@ -12,6 +13,8 @@
     margin-top: 47px;
     padding: 0px;
     justify-content: center;
+    /* width: 100%; */
+    max-width: 880px;
 
 }
 
@@ -23,10 +26,11 @@
         max-width: calc(100% - 40px);
 
         margin-left: 20px;
+        margin-right: 20px;
 
     }
 
-    @media screen and (min-width:921px) and (max-width:1280px) {
+    /* @media screen and (min-width:921px) and (max-width:1280px) {
 
 
         .cards__list {
@@ -37,5 +41,5 @@
 
 
         }
-    }
+    } */
 }
