@@ -7,8 +7,7 @@ This is Project #3 in the Web Development program at Practicumk. It was created 
 - Intro
 - Figma
 - Images
-
-**Intro**
+  **Intro**
 
 This project is made so all the elements are displayed correctly on popular screen sizes.
 
