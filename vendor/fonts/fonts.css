@@ -28,9 +28,3 @@
     src: url("./Inter-Black.woff") format("woff"),
         url("./Inter-Black.woff2") format("woff2");
 }
-
-
-
-.font-container_font_inter {
-    font-family: Inter, sans-serif;
-}
