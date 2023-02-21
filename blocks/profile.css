@@ -183,7 +183,7 @@
         margin: 0px;
         padding-bottom: 36px;
         align-self: center;
-        width: 282px;
+        /* width: 282px; */
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
