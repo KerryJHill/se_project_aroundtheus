@@ -121,7 +121,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width:761px) and (max-width:920px) {
+@media screen and (min-width:661px) and (max-width:920px) {
     .profile {
         /* display: flex; */
         margin: 38px 0px 26px 20px;
@@ -132,10 +132,12 @@
     }
 }
 
-@media screen and (min-width:320px) and (max-width:760px) {
+@media screen and (min-width:320px) and (max-width:660px) {
     .profile {
         /* display: flex; */
         margin: 38px 0px 26px 0px;
+        /* grid-template-columns: minmax(auto, 196px) auto;
+        grid-column-gap: 25px; */
 
         flex-direction: column;
 
@@ -143,8 +145,9 @@
     }
 
     .profile__info {
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        /* flex-direction: column; */
+        /* justify-content: center; */
         /* place-items: center; */
 
         margin: 0px;
@@ -153,7 +156,9 @@
             "title button"
             "description description"; */
 
-        width: 282px;
+        width: 196px;
+        grid-template-columns: minmax(auto, 196px) auto;
+        grid-column-gap: 10px;
 
 
 
@@ -171,16 +176,18 @@
 
 
     .profile__title {
-        justify-content: center;
-        width: 100%;
+        /* justify-content: center; */
+        /* width: 100%; */
         font-size: 22px;
         line-height: 26px;
         margin-top: 26px;
-        /* width: 196px; */
+        width: 196px;
         /* text-overflow: ellipsis; */
         /* white-space: nowrap; */
         /* overflow: hidden; */
         text-align: center;
+        /* grid-template-columns: minmax(auto, 196px) auto;
+        grid-column-gap: 25px; */
 
 
     }
@@ -196,9 +203,12 @@
         padding-bottom: 36px;
         align-self: center;
         /* width: 282px; */
+
+
         /* text-overflow: ellipsis; */
         /* white-space: nowrap; */
         /* overflow: hidden; */
+        max-width: 196px;
     }
 
     .profile__add-button {
