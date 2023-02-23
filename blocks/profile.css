@@ -156,7 +156,7 @@
             "title button"
             "description description"; */
 
-        width: 196px;
+        /* width: 196px; */
         grid-template-columns: minmax(auto, 196px) auto;
         grid-column-gap: 10px;
 
