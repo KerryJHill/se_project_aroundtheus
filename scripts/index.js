@@ -25,3 +25,19 @@ link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/ar
 
 ]
 
+const profileEditButton = document.querySelector("#profile-edit-button");
+const modal = document.querySelector("#profile-edit-modal")
+const modalCloseButton = document.querySelector("#modal-close-button")
+
+profileEditButton.addEventListener("click", () => {
+    modal.classList.add("modal__opened")
+     
+});
+
+   
+modalCloseButton.addEventListener("click", () => {
+    modal.classList.remove("modal__opened");
+})
+
+
+
