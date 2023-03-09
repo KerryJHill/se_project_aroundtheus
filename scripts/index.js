@@ -25,19 +25,45 @@ link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/ar
 
 ]
 
+// Elements
 const profileEditButton = document.querySelector("#profile-edit-button");
 const modal = document.querySelector("#profile-edit-modal")
 const modalCloseButton = document.querySelector("#modal-close-button")
+const profileTitle = document.querySelector(".profile__title");
+const profileDescription = document.querySelector(".profile__description");
 
+const profileTitleInput = document.querySelector("#profile-title-input");
+const profileDescriptionInput = document.querySelector("#profile-description-input");
+const profileEditForm = modal.querySelector(".modal__container");
+
+
+// Functions
+function closePopup(){
+    modal.classList.remove("modal__opened");
+
+}
+
+// Event Handlers
+
+function handleProfileEditSubmit(e) {
+    e.preventDefault();
+    profileTitle.textContent = profileTitleInput.value;
+    profileDescription.textContent = profileDescriptionInput.value;
+    closePopup();
+}
+
+// Event Listeners
 profileEditButton.addEventListener("click", () => {
+    profileTitleInput.value = profileTitle.textContent;
+    profileDescriptionInput.value = profileDescription.textContent;
     modal.classList.add("modal__opened")
      
 });
 
    
-modalCloseButton.addEventListener("click", () => {
-    modal.classList.remove("modal__opened");
-})
+modalCloseButton.addEventListener("click", closePopup);
 
 
+
+profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
