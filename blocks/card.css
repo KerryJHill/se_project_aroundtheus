@@ -1,76 +1,79 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
 
-    padding: 0px;
-
-
+  padding: 0px;
+  position: relative;
 }
 
 .card__image {
-    width: 282px;
-    height: 282px;
+  width: 282px;
+  height: 282px;
 
-    border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .card__description {
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
-    color: black;
-    border-radius: 0px 0px 10px 10px;
-    margin: 0px;
-    width: 282px;
-
-
+  font-family: "Inter", sans-serif;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0px;
+  width: 282px;
 }
 
 .card__title {
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 29px;
-    margin: 0px;
-    padding: 0px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-left: 20px;
-    /* width: 282px; */
-    width: 220px;
-
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  margin: 0px;
+  padding: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 20px;
+  /* width: 282px; */
+  width: 220px;
 }
 
-
 .card__like-button {
+  background: transparent url(../images/Like-button.svg);
+  width: 21px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  border: none;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
 
-    background: transparent url(../images/Like-button.svg);
-    width: 21px;
-    height: 18px;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    padding: 0;
-
-    border: none;
-    justify-content: flex-end;
-    margin-right: 20px;
-
-
-
-
+.card__like-button_active {
+  background-image: url("../images/Union2.svg");
 }
 
 .card__like-button:hover {
-    opacity: 0.5;
+  opacity: 0.5;
+}
 
-
-
+.card__delete-button {
+  background: transparent url(../images/Trash.svg);
+  width: 18px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  border: none;
+  cursor: pointer;
 }
