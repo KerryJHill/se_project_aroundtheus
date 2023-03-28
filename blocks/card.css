@@ -11,8 +11,16 @@
 .card__image {
   width: 282px;
   height: 282px;
+  /* border-radius: 10px 10px 0px 0px; */
+  border-radius: 10px;
+  cursor: pointer;
+}
 
-  border-radius: 10px 10px 0px 0px;
+.card__image-preview-button {
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .card__description {
