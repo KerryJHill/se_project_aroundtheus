@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   /* display: none; */
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s, linear 0.3s;.
+  transition: opacity 0.3s ease-in-out, visibility 0.3s, linear 0.3s;
   align-items: center;
 }
 
@@ -163,6 +163,5 @@
     height: 26px;
     bottom: calc(100% + 14px);
     left: calc(100% - 26px);
-    
   }
 }
