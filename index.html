@@ -9,8 +9,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body class="page">
-    <!-- <div class="page__section"> -->
-    <!-- <header class="header page__section"> -->
     <header class="header page__section">
       <img
         class="header__logo"
@@ -18,7 +16,6 @@
         alt="Around the U.S. logo"
       />
     </header>
-    <!-- </div> -->
 
     <main class="page__section">
       <section class="profile">
@@ -44,7 +41,7 @@
           class="profile__add-button"
         ></button>
       </section>
-      <!-- <section class="cards page__section"> -->
+
       <section class="cards">
         <ul class="cards__list"></ul>
       </section>
@@ -59,8 +56,7 @@
         <button class="modal__close" id="modal-close-button"></button>
 
         <h3 class="modal__heading">Edit Profile</h3>
-        <!-- <form class="modal__input" id="edit-profile-form"> -->
-        <!-- <form class="modal__input"> -->
+
         <form>
           <input
             class="modal__input"
@@ -78,7 +74,6 @@
           />
           <button class="modal__button">Save</button>
         </form>
-        <!-- <input type="text" name="description" /> -->
       </div>
     </div>
 
@@ -89,26 +84,25 @@
         <button class="modal__close" id="acmodal-close-button"></button>
 
         <h3 class="modal__heading">New Place</h3>
-        <!-- <form class="modal__input" id="edit-profile-form"> -->
-        <!-- <form class="modal__input"> -->
-        <form>
+        <form id="add-card-form">
           <input
             class="modal__input"
             type="text"
             name="title"
             id="card-title-input"
             placeholder="Title"
+            required
           />
           <input
             class="modal__input"
-            type="text"
+            type="url"
             name="URL"
             id="card-url-input"
             placeholder="Image URL"
+            required
           />
           <button class="modal__button">Save</button>
         </form>
-        <!-- <input type="text" name="description" /> -->
       </div>
     </div>
 
