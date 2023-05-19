@@ -63,30 +63,19 @@ const addCardForm = document.querySelector("#add-card-form");
 
 const closeModalWithClick = (e) => {
   if (e.target === e.currentTarget) {
-    handleModalClose(e.currentTarget);
+    // handleModalClose(e.currentTarget);
+    closeModal(e.currentTarget);
   }
 };
 
 const closeModalWithEsc = (e) => {
   if (e.key === "Escape") {
     const activeModal = document.querySelector(".modal__opened");
-    handleModalClose(activeModal);
+    closeModal(activeModal);
   }
 };
 
 // Functions---------------------------------------------
-
-function handleModalClose(modal) {
-  modal.classList.remove("modal__opened");
-  modal.removeEventListener("mousedown", closeModalWithClick);
-  document.removeEventListener("keydown", closeModalWithEsc);
-}
-
-function handleModalOpen(modal) {
-  modal.classList.add("modal__opened");
-  modal.addEventListener("mousedown", closeModalWithClick);
-  document.addEventListener("keydown", closeModalWithEsc);
-}
 
 function openModal(modal) {
   modal.classList.add("modal__opened");

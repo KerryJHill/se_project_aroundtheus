@@ -33,12 +33,6 @@ function checkInputValidity(formElement, inputElement, options) {
   }
 }
 
-// function hasInvalidInput(inputElements) {
-//   return !inputElements.every((inputElement) => {
-//     return inputElement.validity.valid;
-//   });
-// }
-
 function hasInvalidInput(inputElements) {
   return !inputElements.every((inputElement) => inputElement.validity.valid);
 }
@@ -108,7 +102,5 @@ const config = {
   inputErrorClass: "modal__input_type_error",
   errorClass: "modal__error_visible",
 };
-
-const a = document.querySelectorAll(".modal form"); // length === 2
 
 enableValidation(config);
